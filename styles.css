@@ -2,64 +2,31 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h2 {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  font-size: 1em;
-  color: red;
-  /* padding-left: 75px; */
-  /* padding-top: 100px; */
-}
-
 ::-webkit-scrollbar {
   display: none
 }
 
 .b {
   display: inline-block;
-  width: 200px;
-  /* box-sizing: border-box; */
+  width: 24%;
   font-size: 1em;
   text-align: center;
-  /* padding-left: 75px; */
-  /* padding-top: 1px; */
   padding-bottom: 20px;
-  /* vertical-align: top; */
   color: red;
 }
-
-/* .all {
-  display: inline-block;
-  vertical-align: top;
-  align-self: center;
-  margin-left: 1em;
-} */
 
 .mainClicker {
   background-color: #555555;
   border: none;
   color: white;
-  width: 200px;
-  padding: 24px 32px;
+  width: 24%;
+  padding: 44px;
   border-radius: 11px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.5s;
   outline: none;
 }
-
-/* button {
-  background-color: #555555;
-  border: none;
-  color: white;
-  padding: 9px 32px;
-  border-radius: 11px;
-  text-align: center;
-  font-size: 16px;
-  transition-duration: 0.5s;
-  outline: none;
-} */
 
 button:hover {
   background-color: green;
