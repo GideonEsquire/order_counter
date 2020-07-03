@@ -1,27 +1,27 @@
-let bank = 444444;
-let clicker;
-let auto_clickers = [];
-let b;
+let orders = 0;
+let order_button;
+let order_element;
+
+let shorts = 0;
+let shorts_button;
+let shorts_element;
+
+let lates = 0;
+let lates_button;
+let lates_element;
+
 
 function setup() {
   createCanvas(0);
-  b = createElement('span', bank);
-  b.addClass('b');
-  clicker = createButton('clickerino');
-  clicker.addClass('mainClicker');
-  clicker.position(200, 200);
-  clicker.mousePressed(() => bankAdd(1));
+  order_element = createElement('span', orders).addClass('b');
+  order_button = createButton('Increase').addClass('mainClicker').position(100, 275).mousePressed(() => order_element.html(++orders));
+  order_button_minus = createButton('Decrease').addClass('mainClicker').position(100, 350).mousePressed(() => order_element.html(--orders));
 
-  for (let i = 1; i < 10; i++) {
-    auto_clickers[i] = new Auto_clicker(500, (i - 1) * 40 + 200, 20 ** i);
-  }
-}
+  shorts_element = createElement('span', shorts).addClass('b');
+  shorts_button = createButton('Increase').addClass('mainClicker').position(350, 275).mousePressed(() => shorts_element.html(++shorts));
+  shorts_button_minus = createButton('Decrease').addClass('mainClicker').position(350, 350).mousePressed(() => shorts_element.html(--shorts));
 
-function bankAdd(a) {
-  bank += a;
-  b.html(int(bank));
-}
-
-function auto_add(production = 0.1) {
-  setInterval(() => bankAdd(production), 1000);
+  lates_element = createElement('span', lates).addClass('b');
+  lates_button = createButton('Increase').addClass('mainClicker').position(600, 275).mousePressed(() => lates_element.html(++lates));
+  lates_button_minus = createButton('Decrease').addClass('mainClicker').position(600, 350).mousePressed(() => -lates_element.html(--lates));
 }
