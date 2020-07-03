@@ -6,9 +6,10 @@ h2 {
   display: inline-block;
   width: 200px;
   text-align: center;
+  font-size: 2em;
   color: red;
-  padding-left: 75px;
-  padding-top: 100px;
+  /* padding-left: 75px; */
+  /* padding-top: 100px; */
 }
 
 ::-webkit-scrollbar {
@@ -21,10 +22,10 @@ h2 {
   /* box-sizing: border-box; */
   font-size: 2em;
   text-align: center;
-  align-self: center;
-  padding-left: 75px;
-  padding-top: 1px;
-  vertical-align: top;
+  /* padding-left: 75px; */
+  /* padding-top: 1px; */
+  padding-bottom: 20px;
+  /* vertical-align: top; */
   color: red;
 }
 
@@ -48,8 +49,7 @@ h2 {
   outline: none;
 }
 
-button {
-  /* margin-left: 200px; */
+/* button {
   background-color: #555555;
   border: none;
   color: white;
@@ -59,32 +59,8 @@ button {
   font-size: 16px;
   transition-duration: 0.5s;
   outline: none;
-}
+} */
 
 button:hover {
   background-color: green;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  color: green;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  left: 120%;
-  top: -5px;
 }
