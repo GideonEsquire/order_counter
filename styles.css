@@ -1,0 +1,72 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+.b {
+    display:inline-block;
+    width: 200px;
+    /* box-sizing: border-box; */
+    font-size: 2em;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 150px;
+    color: red;
+}
+
+.mainClicker {
+    background-color: #555555;
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 9px 32px;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    outline: none;
+}
+
+button {
+    /* margin-left: 200px; */
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 9px 32px;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    outline: none;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  color: green;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  left: 120%;
+  top:  -5px;
+}
